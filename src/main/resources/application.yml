@@ -4,6 +4,15 @@ spring:
     username: root
     password: OperationCenter@2025
     driver-class-name: com.mysql.cj.jdbc.Driver
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
 #springdoc:
 #  api-docs:
 #    path: /api-docs
